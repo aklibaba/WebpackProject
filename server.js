@@ -3,11 +3,13 @@ const path = require('path');
 
 const app = express();
 
-const env = process.env.NODE_ENV;
-const port = 3050;
+//trim becasue setting from shell can add space at the end
+const env = process.env.NODE_ENV.trim();
+const port = process.env.PORT || 3050;
 
 console.log('env:', env);
 if (env !== 'production') {
+  console.log('inside dev callback');
   const webpackMiddleware = require('webpack-dev-middleware');
   const webpack = require('webpack');
   const webpackConfig = require('./webpack.config');
