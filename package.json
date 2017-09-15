@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "latest",
     "faker": "^3.1.0",
     "lodash": "^4.17.2",
     "react": "15.4.1",
@@ -24,7 +25,6 @@
     "redux": "^3.6.0",
     "redux-form": "^6.3.2",
     "redux-thunk": "^2.1.0",
-    "express": "latest",
     "webpack-dev-middleware": "latest"
   },
   "devDependencies": {
